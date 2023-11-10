@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bricolage+Grotesque&family=Libre+Baskerville&family=Lobster&family=Montserrat&family=Poltawski+Nowy:wght@500&family=Rammetto+One&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <title>Deepraj</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .top-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(190, 235, 220);
+            color: #22668D;
+            overflow: hidden;
+        }
+
+        .top-container>img {
+            margin-top: 20px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .top-container>h1 {
+            font-family: 'Abril Fatface', cursive;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-family: 'Libre Baskerville', serif;
+            font-family: 'Lobster', cursive;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poltawski Nowy', serif;
+            font-family: 'Rammetto One', cursive;
+            font-family: 'Titan One', cursive;
+            font-size: 4rem;
+            padding-top: 74px;
+        }
+
+        .top-container>h2 {
+            font-size: 3rem;
+            padding-top: 74px;
+        }
+
+        .middle-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #22668D;
+            overflow: hidden;
+        }
+
+        .background>img {
+            margin-top: 100px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .background>h2 {
+            padding-top: 50px;
+            font-size: 3rem;
+        }
+
+        .background>p {
+            padding-top: 40px;
+            line-height: 2;
+            font-size: 20px;
+        }
+
+        .resume {
+            margin-top: 62px;
+            line-height: 2;
+        }
+
+        .resume>h2 {
+            margin-bottom: 20px;
+            font-size: 3rem;
+        }
+
+        .resume>p {
+            padding-top: 40px;
+            font-size: 20px;
+        }
+
+        .resume a {
+            color: #11999e;
+            font-family: "Montserrat", sans-serif;
+            margin: 10px 20px;
+            text-decoration: none;
+        }
+
+        /* .about-me{
+            di
+        } */
+
+        .text-skills {
+            font-size: 3rem;
+            margin-top: 100px;
+        }
+
+        .skills {
+            /* display: grid;
+            justify-content: center;
+            grid-template-rows: 299px 1fr;
+            grid-template-columns: 691px 1fr;
+            padding: 50px;
+            margin-top: 100px; */
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            grid-template-rows: repeat(1, 1fr);
+            width: 50%;
+            margin: 100px auto 0 auto;
+            text-align: left;
+            row-gap: 2rem;
+            justify-content: center;
+        }
+
+        .skills>.coding>img {
+            /* width: 313px; */
+            width: 158px;
+        }
+
+        .skills>div>h3 {
+            line-height: 2;
+            text-align: left;
+            color: #176B87;
+            font-size: 25px;
+        }
+
+        .skills>div>p {
+            line-height: 2;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        .skills>.tea>img {
+            /* width: 313px; */
+            width: 158px;
+        }
+
+        .contact-details>h2 {
+            font-size: 3rem;
+            margin-top: 74px;
+        }
+
+        .contact-details>h3 {
+            line-height: 3;
+            font-size: 25px;
+        }
+
+        .contact-details>p {
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #219bb9;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(190, 235, 220);
+            height: 200px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .footer>.social-media-link {
+            padding: 40px;
+        }
+
+        .social-media-link>a {
+
+            color: #11999e;
+            font-family: "Montserrat", sans-serif;
+            margin: 10px 20px;
+            text-decoration: none;
+        }
+
+        .footer>p {
+            font-size: 17px;
+        }
+        p{
+            color: rgb(70, 80, 88);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-container">
+        <img src="./images/35337232.jpg" alt="coder-logo">
+        <h1>I Am Deepraj Baruah</h1>
+        <h2>a programmer.</h2>
+    </div>
+    <div class="middle-container">
+        <div class="background">
+            <img src="./images/photo.jpg" alt="profile-pic">
+            <h2>Hello.</h2>
+            <p>My name is Deepraj Baruah i am an Web Developer from
+                Guwahati, Assam,<br> india i am very passionate about
+                my work in what i do. Because I love what I do,<br> I have
+                a steady source of motivation that drives me to do
+                my best.</p>
+        </div>
+        <div class="resume">
+            <h2>My Resume</h2>
+            <p>Check out some of my work that i learn and grow thus far. Here the link down below.</p>
+            <a href="./project/index.html">Resume</a>
+        </div>
+        <!-- <div class="about-me"> -->
+        <h2 class="text-skills">My Skills</h2>
+        <div class="skills">
+            <div class="coding"><img src="./images/photo-1536148935331-408321065b18.jpeg" alt="doing-coding"></div>
+            <div>
+                <h3>Design & Development</h3>
+                <p> I started learning to code when I was at college days.
+                    Over that time, I have gained a wealth of experience designing and developing mobile and web
+                    applications. P.S-"Where creativity meets tech"</p>
+            </div>
+            <div class="tea"><img src="./images/6807989.jpg" alt="tea"></div>
+            <div>
+                <h3>Tea Challenge</h3>
+                <p>But my best skill is actually having a cup of tea. I am the undisputed king of tea
+                    challenges. I love doing code while having a cup of tea. when i get stress i prefer to have a
+                    cup of tea its a very best way to reduce my headache.</p>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class="contact-details">
+            <h2>Get In Touch</h2>
+            <h3>If you love tea as much as I do.</h3>
+            <p>Love hot tea as much as I do? Let's talk about how awesome,<br> they are! We can code while we have a
+                cup of tea!</p>
+            <button class="button" style="vertical-align:middle"><span><a href="./project/public/contact.html">Contact Me</a></span></button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social-media-link">
+            <a href="www.linkedin.com/in/deepraj-baruah-12372b1ba">linkedIn</a>
+            <a href="https://github.com/Deepraj-Baruah">GitHub</a>
+        </div>
+        <p>© Deepraj Baruah @ The Freelancer org.</p>
+    </div>
+</body>
+
+</html>
